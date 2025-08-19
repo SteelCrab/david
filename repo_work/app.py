@@ -1,5 +1,5 @@
 #Flask class 가져옴
-from flask import Flask
+from flask import Flask, render_template
 
 # Flask 애플리케이션 생성(인스턴스)
 app = Flask(__name__)
@@ -9,6 +9,12 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return 'Hello, DevOps!'
+#route : menu
+#menu.html 파일을 렌더링함
+# render_template : Render a template by name with the given context.
+@app.route('/menu')
+def menu():
+    return render_template('menu.html')
 
 if __name__ == '__main__':
     # Flask 웹 서버 시작
