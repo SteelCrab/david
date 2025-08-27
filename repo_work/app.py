@@ -11,6 +11,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():  # 함수명을 hello_world에서 home으로 변경
     # 컴퓨터 이름(호스트네임) 설정
+    # app.debug란? : 디버그 모드에서 실행 중인지 확인 여부
     if app.debug:
         hostname = '컴퓨터(인스턴스) : ' + socket.gethostname()
     else:
@@ -25,6 +26,11 @@ def home():  # 함수명을 hello_world에서 home으로 변경
 @app.route('/menu')
 def menu():
     return render_template('menu.html')
+
+@app.route("/test1")
+def test1():
+    return render_template('test1.html')
+
 
 if __name__ == '__main__':
     # Flask 웹 서버 시작
