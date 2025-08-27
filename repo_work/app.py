@@ -25,6 +25,11 @@ def home():  # 함수명을 hello_world에서 home으로 변경
 @app.route('/menu')
 def menu():
     return render_template('menu.html')
+# route: test2
+# test2.html 렌더링함 
+@app.route("/test2")
+def test2():
+    return render_template('test2.html')
 
 if __name__ == '__main__':
     # Flask 웹 서버 시작
