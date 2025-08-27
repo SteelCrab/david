@@ -5,7 +5,8 @@ import socket  # socket 모듈 import 추가
 # Flask 애플리케이션 생성(인스턴스)
 app = Flask(__name__)
 # route : root
-# 라우트 데코레이터 : URL 경로 "/" 요청 처리
+# index.html 파일 렌더링 
+# 컴퓨터 이름 
 # 브라우저에서 http://localhost:8080/ 접속 시 아래 함수가 실행됨
 @app.route('/')
 def home():  # 함수명을 hello_world에서 home으로 변경
