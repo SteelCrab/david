@@ -27,9 +27,9 @@ def home():  # 함수명을 hello_world에서 home으로 변경
 def menu():
     return render_template('menu.html')
 
-@app.route("/test2")
-def test2():
-    return render_template('test2.html')
+@app.route("/test1")
+def test1():
+    return render_template('test1.html')
 
 
 if __name__ == '__main__':
