@@ -13,6 +13,6 @@
   ```
 
   #  이미지
-  ![](images/image.png)
+  ![](images/david.png)
   # 사이즈 100x100
-    <img src="images/image.png" width="100" height="100" alt="작은 이미지">
+    <img src="images/david.png" width="100" height="100" alt="작은 이미지">
