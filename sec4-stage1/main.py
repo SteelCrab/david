@@ -64,6 +64,7 @@ def json_file(list_log,json_name):
     try:
         with open(json_name,"w",encoding="utf-8") as w_json:
             json.dump(list_log,w_json)
+	
     except UnicodeDecodeError as err:
         print(f"디코딩 중 에러 발생 :{err}")
         print(f"해당파일:{path_log} open메소드의 인코딩 형식과 맞는지 확인")
